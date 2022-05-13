@@ -1,0 +1,43 @@
+  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Is Your Birthday Lucky?</title>
+</head>
+<body>
+    <nav class="navigation ">
+        <div class="nav-brand">Is Your Birthday Lucky?</div>
+    </nav>
+    <div class="container">
+        <img style="height: 5%; width: 60%; margin-top: 1rem;justify-content: center;" src="cake.jpg" alt="">
+            <h2 class="heading"> Let's check it out </h2>
+             <br>
+            <form class="form">
+                <div class="form-section">
+                    <label for="bday">Enter Your Birth Day:</label>
+                    <input type="date" id="bday" required >
+                </div>
+                <div class="form-section">
+                    <label for="lucky-num">Your Lucky Number:</label>
+                    <input required type="number" id="lucky-num" >
+                </div>
+                <button type="submit" class="btn">Check If You're Lucky</button>
+            </form>
+            <section>
+            <h1 class="result"></h1>
+        </section>
+        
+    </div>
+    <br>
+    <footer class="footer">
+        <div class="footer-header">About</div>
+        <div>This app take users birthday and lucky number as input and calculate if the sum of all numbers in their birthday is exactly divisible by lucky number.</div>
+        <div>If yes, then Lucky else not lucky.</div>
+
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
